@@ -1,0 +1,16 @@
+
+
+input.error,div.select-box01.error{
+	background: #FFEBEB;
+	border: 1px solid #F64F52;
+	color: #000000;
+	font-size: 15px;
+}
+
+div.radiobtn.error {
+	border: none;
+}
+
+table thead tr th.result_inq_buttons {
+	width: 390px;
+}

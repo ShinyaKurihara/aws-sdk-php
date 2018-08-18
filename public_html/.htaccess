@@ -1,0 +1,14 @@
+Options -MultiViews
+
+
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteBase /
+
+#RewriteRule ^(.*)/(.*)/([0-9]+)/$ $1.php?mode=$2&pID=$3 [R=301,L]
+#RewriteRule ^(.*)/(.*)/$ $1.php?mode=$2 [R=301]
+RewriteCond %{REQUEST_URI} !\.php$
+RewriteRule ^([^/]+)/$ $1.php [END]
+RewriteRule ^([^/]+)/([^/]+)/$ $1.php?mode=$2 [END]
+
+</IfModule>
